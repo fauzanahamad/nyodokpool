@@ -14,32 +14,30 @@ body {
   color: white;
 }
 
-.navbar-brand img {
+.logo-img {
   height: auto;
-  max-width: 200px;
-  max-height: 80px;
+  max-width: 150px;
   object-fit: contain;
 }
 
 /* Hero Section */
 .hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 80vh;
-  padding: 50px;
+  text-align: center;
+  padding: 50px 20px;
 }
 
 .hero h1 {
   font-weight: bold;
+  font-size: 2rem;
 }
 
-.hero img {
-  width: 400px;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 0;
-  margin-left: 200px; /* Geser ke kanan */
+.hero p {
+  font-size: 1rem;
+}
+
+.billiard-img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Pricelist Section */
@@ -47,23 +45,12 @@ body {
   text-align: center;
 }
 
-.price-table {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-
 .price-card {
   background: #222;
   padding: 20px;
   border-radius: 10px;
-  width: 250px;
   text-align: center;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-}
-
-.price-card.vip {
-  background: #444;
 }
 
 .price {
@@ -73,29 +60,18 @@ body {
 }
 
 /* Contact Section */
-#contact {
-  text-align: center;
-}
-
-.contact-info {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 20px;
-}
-
 .contact-card {
   background: #222;
   padding: 15px 30px;
   border-radius: 10px;
-  text-align: center;
-  color: white;
-  font-size: 18px;
-  text-decoration: none;
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 10px;
-  transition: 0.3s ease-in-out;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
 }
 
 .contact-card i {
@@ -107,25 +83,21 @@ body {
   color: black;
 }
 
-.contact-card:nth-child(1) {
-  background: #25d366;
-} /* WhatsApp Color */
-.contact-card:nth-child(1):hover {
-  background: #1ebc54;
-}
-
-.contact-card:nth-child(2) {
-  background: #e4405f;
-} /* Instagram Color */
-.contact-card:nth-child(2):hover {
-  background: #d12b4a;
-}
-
 /* Footer */
 .footer {
   background: black;
   color: white;
   text-align: center;
-  padding: 20px;
-  margin-top: 20px;
+  padding: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+  }
+
+  .contact-card {
+    flex-direction: column;
+  }
 }
